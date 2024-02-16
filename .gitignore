@@ -1,0 +1,7 @@
+# Meta application file
+/metaApplication.xml
+
+# temporary files
+tmp-*
+*.swp
+

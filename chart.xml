@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chart:chart xmlns:chart="http://schemas.unitedplanet.de/intrexx/2015/workflow/chart/" refGuid="B1D2A242018E41A9A342EB635F55A180321ED0C4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.unitedplanet.de/intrexx/2015/workflow/chart/ http://schemas.unitedplanet.de/intrexx/2015/package/de/uplanet/lucy/workflow/res/wfchart.xsd">
+    <chart:backGroundBox x="10" y="100" w="791" h="361" colorText="#000000" halign="10" locked="false" valign="1">
+        <chart:backGroundBoxText lang="de" value="Durch das Aktivieren des JDBC-Trace werden alle Requests (SQL-Befehle) zwischen Intrexx und der Datenbank geloggt. Ebenso wird in diesem Fall der Start und das Ende jedes Request geloggt. &#10;Falls es notwendig ist, kann man zusätzlich noch die ProcessingTime (die Dauer eines Request) ausgeben lassen. Dies muss hier separat eingeschalten werden.&#10;"/>
+        <chart:backGroundBoxText lang="en" value="Durch das aktivieren des JDBC-Trace werden alle Aktionen (SQL-Befehle) zwischen Intrexx und der Datenbank geloggt. &#10;"/>
+        <chart:border colorTop="#c0c0c0" colorBottom="#c0c0c0"/>
+        <chart:backGround colorTop="#e0e0e0" colorBottom="#e0e0e0"/>
+    </chart:backGroundBox>
+    <chart:backGroundBox x="10" y="490" w="371" h="271" colorText="#000000" halign="10" locked="false" valign="1">
+        <chart:backGroundBoxText lang="de" value="Durch das aktivieren des Request Dump werden alle Requests (Post / Get) weche beim Portal ankommen geloggt. "/>
+        <chart:backGroundBoxText lang="en" value="Durch das aktivieren des Request Dump werden alle Requests (Post / Get) weche beim Portal ankommen geloggt. "/>
+        <chart:border colorTop="#c0c0c0" colorBottom="#c0c0c0"/>
+        <chart:backGround colorTop="#e0e0e0" colorBottom="#e0e0e0"/>
+    </chart:backGroundBox>
+    <chart:backGroundBox x="10" y="790" w="371" h="271" colorText="#000000" halign="10" locked="false" valign="1">
+        <chart:backGroundBoxText lang="de" value="Diese Aktion erstellt ein aktuelles Abbild des Speichers (Heap) der VM (Intrexx Portal-VM). Diese Datei (*.hprof) wird im Portalverzeichnis abgelegt."/>
+        <chart:backGroundBoxText lang="en" value="Diese Aktion erstellt ein aktuelles Abbild des Speichers (Heap) der VM (Intrexx Portal-VM). Diese Datei (*.hprof) wird im Portalverzeichnis abgelegt."/>
+        <chart:border colorTop="#c0c0c0" colorBottom="#c0c0c0"/>
+        <chart:backGround colorTop="#e0e0e0" colorBottom="#e0e0e0"/>
+    </chart:backGroundBox>
+    <chart:backGroundBox x="410" y="490" w="391" h="271" colorText="#000000" halign="10" locked="false" valign="1">
+        <chart:backGroundBoxText lang="de" value="Mit dieser Aktion wird ein Abbild der aktuellen Threads und dessen Zustand erstellt."/>
+        <chart:backGroundBoxText lang="en" value="Mit dieser Aktion wird ein Abbild der aktuellen Threads und dessen Zustand erstellt."/>
+        <chart:border colorTop="#c0c0c0" colorBottom="#c0c0c0"/>
+        <chart:backGround colorTop="#e0e0e0" colorBottom="#e0e0e0"/>
+    </chart:backGroundBox>
+    <chart:backGroundBox x="10" y="1090" w="371" h="271" colorText="#000000" halign="10" locked="false" valign="1">
+        <chart:backGroundBoxText lang="de" value="Diese Aktion gibt unbenötigten Speicher der VM  (Intrexx Portal-VM) wieder frei. "/>
+        <chart:backGroundBoxText lang="en" value="Diese Aktion gibt unbenötigten Speicher der VM  (Intrexx Portal-VM) wieder frei. "/>
+        <chart:border colorTop="#c0c0c0" colorBottom="#c0c0c0"/>
+        <chart:backGround colorTop="#e0e0e0" colorBottom="#e0e0e0"/>
+    </chart:backGroundBox>
+    <chart:backGroundBox x="410" y="790" w="391" h="271" colorText="#000000" halign="10" locked="false" valign="1">
+        <chart:backGroundBoxText lang="de" value="Durch das aktivieren des Login Debug, wird eine erweiteres Debug zum Benutzer-Login aktiviert."/>
+        <chart:backGroundBoxText lang="en" value="Durch das aktivieren des Login Debug, wird eine erweiteres Debug zum Benutzer-Login aktiviert."/>
+        <chart:border colorTop="#c0c0c0" colorBottom="#c0c0c0"/>
+        <chart:backGround colorTop="#e0e0e0" colorBottom="#e0e0e0"/>
+    </chart:backGroundBox>
+    <chart:backGroundBox x="10" y="10" w="791" h="61" colorText="#000000" halign="10" locked="false" valign="1">
+        <chart:backGroundBoxText lang="de" value="Alle Aktionen / Prozesse werden durch Rechtsklick &quot;Dieses Ereignis jetzt auslösen&quot; gestartet. Bitte beachten Sie, dass je nach Prozess die Logfiles entsprechend größer werden und somit mehr Speicherplatz in anspruch nehmen können."/>
+        <chart:backGroundBoxText lang="en" value="Alle Aktionen / Prozesse werden durch Rechtsklick &quot;Dieses Ereignis jetzt auslösen&quot; gestartet. Bitte beachten Sie, dass je nach Prozess die Logfiles entsprechend größer werden und somit mehr Speicherplatz in anspruch nehmen können."/>
+        <chart:border colorTop="#c0c0c0" colorBottom="#c0c0c0"/>
+        <chart:backGround colorTop="#e0e0e0" colorBottom="#e0e0e0"/>
+    </chart:backGroundBox>
+    <chart:eventHandler x="30" y="200" w="131" h="80" refGuid="B1EDE8BA09E38F5736F2DD20FB97763A5B32B121">
+        <chart:connectionPoint index="2">
+            <chart:connector guid="E83E4C313B4FEFB1B2B74EA25CD22289205E73D2" edge="start"/>
+        </chart:connectionPoint>
+    </chart:eventHandler>
+    <chart:eventHandler x="180" y="200" w="131" h="80" refGuid="8A77CEF81FD7F3AAA4EFC659341D493CE0E93E98">
+        <chart:connectionPoint index="2">
+            <chart:connector guid="BCF89311AF490A53AF0928E91B83BB064FCD587B" edge="start"/>
+        </chart:connectionPoint>
+    </chart:eventHandler>
+    <chart:eventHandler x="30" y="570" w="141" h="80" refGuid="C161A6EA1372F65B98FE6F4A4D24AAEA3BE0B4DA">
+        <chart:connectionPoint index="2">
+            <chart:connector guid="11CCB906C3EF68905666266165F0B5B8E3125603" edge="start"/>
+        </chart:connectionPoint>
+    </chart:eventHandler>
+    <chart:eventHandler x="210" y="570" w="151" h="80" refGuid="1BDD14347F1FCEE990F2C42F6CC00F272C62AD36">
+        <chart:connectionPoint index="2">
+            <chart:connector guid="F259E1BC1F300D30F5292848DEE0C5948E29D13B" edge="start"/>
+        </chart:connectionPoint>
+    </chart:eventHandler>
+    <chart:eventHandler x="40" y="880" w="131" h="80" refGuid="6ED41CBFA93C4199F9D615DDC42E64D57036F748">
+        <chart:connectionPoint index="2">
+            <chart:connector guid="8EBA315DBC04947669C3D63459CAB2D6652536E6" edge="start"/>
+        </chart:connectionPoint>
+    </chart:eventHandler>
+    <chart:eventHandler x="440" y="570" w="141" h="81" refGuid="1BA38F90FCA84EBE4702428766CD474427FB547C">
+        <chart:connectionPoint index="2">
+            <chart:connector guid="2503F5E66B039AA9F4BC10444ADCEE543BA118A9" edge="start"/>
+        </chart:connectionPoint>
+    </chart:eventHandler>
+    <chart:action x="30" y="310" w="131" h="51" refGuid="08568A1A68C4408086B356973B0AADAB15DF0023">
+        <chart:connectionPoint index="0">
+            <chart:connector guid="E83E4C313B4FEFB1B2B74EA25CD22289205E73D2" edge="end"/>
+        </chart:connectionPoint>
+        <chart:connectionPoint index="2">
+            <chart:connector guid="7156B088A812E7ADCF00906ED549B515D5CC170F" edge="start"/>
+        </chart:connectionPoint>
+    </chart:action>
+    <chart:action x="180" y="310" w="131" h="50" refGuid="C402C2C061EDA6509679DAD55E21D38D1804E34A">
+        <chart:connectionPoint index="0">
+            <chart:connector guid="BCF89311AF490A53AF0928E91B83BB064FCD587B" edge="end"/>
+        </chart:connectionPoint>
+        <chart:connectionPoint index="2">
+            <chart:connector guid="33A235695656D7BE0C971BC8030CDEF941B4C5CB" edge="start"/>
+        </chart:connectionPoint>
+    </chart:action>
+    <chart:action x="30" y="680" w="141" h="51" refGuid="E9FFAEDE08679FDBC0E54A21A94F8BCA664C9848">
+        <chart:connectionPoint index="0">
+            <chart:connector guid="11CCB906C3EF68905666266165F0B5B8E3125603" edge="end"/>
+        </chart:connectionPoint>
+    </chart:action>
+    <chart:action x="210" y="680" w="151" h="51" refGuid="AD749554E656EFD1E997E5D0466D5F648C7CC1F9">
+        <chart:connectionPoint index="0">
+            <chart:connector guid="F259E1BC1F300D30F5292848DEE0C5948E29D13B" edge="end"/>
+        </chart:connectionPoint>
+    </chart:action>
+    <chart:action x="40" y="990" w="131" h="50" refGuid="F8946EBFA1F8AF3F425660235F905ACED0A2BE98">
+        <chart:connectionPoint index="0">
+            <chart:connector guid="8EBA315DBC04947669C3D63459CAB2D6652536E6" edge="end"/>
+        </chart:connectionPoint>
+    </chart:action>
+    <chart:action x="440" y="690" w="141" h="50" refGuid="DEA49C0294B2CF62619037304B345E11754A81C3">
+        <chart:connectionPoint index="0">
+            <chart:connector guid="2503F5E66B039AA9F4BC10444ADCEE543BA118A9" edge="end"/>
+        </chart:connectionPoint>
+    </chart:action>
+    <chart:eventHandler x="40" y="1160" w="131" h="80" refGuid="B10CAD5996158AB8592E004E467A75E153C8FE84">
+        <chart:connectionPoint index="2">
+            <chart:connector guid="7DA8F79C7C8F8F735ABEB0B511F322F48C8F0E15" edge="start"/>
+        </chart:connectionPoint>
+    </chart:eventHandler>
+    <chart:eventHandler x="440" y="880" w="141" h="80" refGuid="3F1B14A8B18B37E8892421E06AFAD52679A20520">
+        <chart:connectionPoint index="2">
+            <chart:connector guid="4161CEF4E0860FDB24F1344D466773F76C91BCDC" edge="start"/>
+        </chart:connectionPoint>
+    </chart:eventHandler>
+    <chart:eventHandler x="620" y="880" w="131" h="80" refGuid="5C4F14E1089298E04846B5695EE826BB42FE2ED8">
+        <chart:connectionPoint index="2">
+            <chart:connector guid="4515A6BD1D7FF6D097A234825932D0140ACCFF43" edge="start"/>
+        </chart:connectionPoint>
+    </chart:eventHandler>
+    <chart:action x="40" y="1270" w="131" h="50" refGuid="B6BC32CD5553A20334CBF0FE0597D501F8B0A3D8">
+        <chart:connectionPoint index="0">
+            <chart:connector guid="7DA8F79C7C8F8F735ABEB0B511F322F48C8F0E15" edge="end"/>
+        </chart:connectionPoint>
+    </chart:action>
+    <chart:action x="440" y="990" w="141" h="50" refGuid="5F93EF782B248851FEC6D55CAD005C0BF59B6234">
+        <chart:connectionPoint index="0">
+            <chart:connector guid="4161CEF4E0860FDB24F1344D466773F76C91BCDC" edge="end"/>
+        </chart:connectionPoint>
+    </chart:action>
+    <chart:action x="620" y="990" w="131" h="50" refGuid="FCF2A2864C441F86C78A4463231D81F4353B3063">
+        <chart:connectionPoint index="0">
+            <chart:connector guid="4515A6BD1D7FF6D097A234825932D0140ACCFF43" edge="end"/>
+        </chart:connectionPoint>
+    </chart:action>
+    <chart:action x="30" y="390" w="131" h="51" refGuid="96DBB37ADC8B52ADF9F3E8D714CD80AA2856FF37">
+        <chart:connectionPoint index="0">
+            <chart:connector guid="7156B088A812E7ADCF00906ED549B515D5CC170F" edge="end"/>
+        </chart:connectionPoint>
+    </chart:action>
+    <chart:action x="400" y="310" w="181" h="51" refGuid="E4A3570041BA685E0187B790BA62D899AD776070">
+        <chart:connectionPoint index="0">
+            <chart:connector guid="1218E86E4C5C9262B5E93139294B9B111BC3B9E6" edge="end"/>
+        </chart:connectionPoint>
+    </chart:action>
+    <chart:eventHandler x="400" y="200" w="181" h="81" refGuid="43FE5AD5A7D7CCFCB40508C0B8D87B7E3FD3F515">
+        <chart:connectionPoint index="2">
+            <chart:connector guid="1218E86E4C5C9262B5E93139294B9B111BC3B9E6" edge="start"/>
+        </chart:connectionPoint>
+    </chart:eventHandler>
+    <chart:eventHandler x="600" y="200" w="181" h="81" refGuid="6BE73A615786DD2FBE16B4456D5E7B8E77A3E507">
+        <chart:connectionPoint index="2">
+            <chart:connector guid="4F6B4A07DC641F734240337BC667C2B233A5D9B4" edge="start"/>
+        </chart:connectionPoint>
+    </chart:eventHandler>
+    <chart:action x="180" y="390" w="131" h="51" refGuid="A2253F3CFC12BDF1C2CB62DA38222381F7B981FB">
+        <chart:connectionPoint index="0">
+            <chart:connector guid="33A235695656D7BE0C971BC8030CDEF941B4C5CB" edge="end"/>
+        </chart:connectionPoint>
+    </chart:action>
+    <chart:action x="600" y="310" w="181" h="51" refGuid="F1813EB4110044FE411756B4A34181B9D08B92C7">
+        <chart:connectionPoint index="0">
+            <chart:connector guid="4F6B4A07DC641F734240337BC667C2B233A5D9B4" edge="end"/>
+        </chart:connectionPoint>
+    </chart:action>
+    <chart:transition guid="E83E4C313B4FEFB1B2B74EA25CD22289205E73D2" refGuid="23942ED43FA9CE8ABC61AD2B389F32E7DFFFEC92">
+        <chart:startPoint x="95" y="279"/>
+        <chart:endPoint x="95" y="310"/>
+    </chart:transition>
+    <chart:transition guid="BCF89311AF490A53AF0928E91B83BB064FCD587B" refGuid="99645BA014045816658AF3DC5082AA910EFB0912">
+        <chart:startPoint x="245" y="279"/>
+        <chart:endPoint x="245" y="310"/>
+    </chart:transition>
+    <chart:transition guid="11CCB906C3EF68905666266165F0B5B8E3125603" refGuid="7771DF7A80B08D874B311E6E912703ED81B73113">
+        <chart:startPoint x="100" y="649"/>
+        <chart:endPoint x="100" y="680"/>
+    </chart:transition>
+    <chart:transition guid="F259E1BC1F300D30F5292848DEE0C5948E29D13B" refGuid="82BF19A86D0C5DE72D08CA713A5ED82AC833E853">
+        <chart:startPoint x="285" y="649"/>
+        <chart:endPoint x="285" y="680"/>
+    </chart:transition>
+    <chart:transition guid="8EBA315DBC04947669C3D63459CAB2D6652536E6" refGuid="6416EAD0F0194D384490D885E1A34E9C0485021B">
+        <chart:startPoint x="105" y="959"/>
+        <chart:endPoint x="105" y="990"/>
+    </chart:transition>
+    <chart:transition guid="2503F5E66B039AA9F4BC10444ADCEE543BA118A9" refGuid="95A00AF4263D399D2DD9439CF99090FECFAE8BC8">
+        <chart:startPoint x="510" y="650"/>
+        <chart:endPoint x="510" y="690"/>
+    </chart:transition>
+    <chart:transition guid="7DA8F79C7C8F8F735ABEB0B511F322F48C8F0E15" refGuid="D64D4903CBB28A7541FC1ECFB995FE26DA24786F">
+        <chart:startPoint x="105" y="1239"/>
+        <chart:endPoint x="105" y="1270"/>
+    </chart:transition>
+    <chart:transition guid="4161CEF4E0860FDB24F1344D466773F76C91BCDC" refGuid="DC127F3BFF371C3DCC1FBDDC37E87F0569EAE023">
+        <chart:startPoint x="510" y="959"/>
+        <chart:endPoint x="510" y="990"/>
+    </chart:transition>
+    <chart:transition guid="4515A6BD1D7FF6D097A234825932D0140ACCFF43" refGuid="CCF85048697278F345C9E9BCFB8095520083D367">
+        <chart:startPoint x="685" y="959"/>
+        <chart:endPoint x="685" y="990"/>
+    </chart:transition>
+    <chart:transition guid="1218E86E4C5C9262B5E93139294B9B111BC3B9E6" refGuid="EB8C8B364A2FECF3FADF5B65D12DFCFD81984B79">
+        <chart:startPoint x="490" y="280"/>
+        <chart:endPoint x="490" y="310"/>
+    </chart:transition>
+    <chart:transition guid="33A235695656D7BE0C971BC8030CDEF941B4C5CB" refGuid="3B011CD342C433228ED46E9CF6024649375B8269">
+        <chart:startPoint x="245" y="359"/>
+        <chart:endPoint x="245" y="390"/>
+    </chart:transition>
+    <chart:transition guid="4F6B4A07DC641F734240337BC667C2B233A5D9B4" refGuid="397A127B864851D5BA9592AADB723E0C2B666F3F">
+        <chart:startPoint x="690" y="280"/>
+        <chart:endPoint x="690" y="310"/>
+    </chart:transition>
+    <chart:transition guid="7156B088A812E7ADCF00906ED549B515D5CC170F" refGuid="82A97A2EED2D359D14A304C0718AB94C19084D88">
+        <chart:startPoint x="95" y="360"/>
+        <chart:endPoint x="95" y="390"/>
+    </chart:transition>
+</chart:chart>

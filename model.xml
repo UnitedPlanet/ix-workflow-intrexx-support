@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:model xmlns:model="http://schemas.unitedplanet.de/intrexx/2014/workflow/model/" xmlns:ix="http://schemas.unitedplanet.de/intrexx/2009/schema/basicType/" guid="B1D2A242018E41A9A342EB635F55A180321ED0C4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.unitedplanet.de/intrexx/2014/workflow/model/ http://schemas.unitedplanet.de/intrexx/2014/package/de/uplanet/lucy/workflow/res/wfmodel.xsd http://schemas.unitedplanet.de/intrexx/2009/schema/basicType/ http://schemas.unitedplanet.de/intrexx/2009/package/de/uplanet/lucy/xml/schema/res/intrexxBasicTypes.xsd">
+    <model:title>
+        <model:item lang="de">JMX-UP-Support-Prozess-IX-1903</model:item>
+        <model:item lang="en">JMX UP Support Process IX-1903</model:item>
+    </model:title>
+    <model:configuration>
+        <ix:property name="allowParallelExecution">true</ix:property>
+        <ix:property name="loggingMode">TRACE</ix:property>
+        <ix:property name="priority">50</ix:property>
+        <ix:property name="runWithLocalSystemPrivileges">true</ix:property>
+    </model:configuration>
+    <model:eventHandler guid="B1EDE8BA09E38F5736F2DD20FB97763A5B32B121" class="de.uplanet.lucy.server.workflow.eventhandler.UserWorkflowEventHandler">
+        <model:title>
+            <model:item lang="de">JDBC Trace: ON</model:item>
+            <model:item lang="en">Generic event handler</model:item>
+        </model:title>
+        <ix:beanProperties>
+            <ix:property name="active">true</ix:property>
+            <ix:property name="eventGuid">99ADC525FB11BE314D8307188F196DA69D3869B8</ix:property>
+            <ix:property name="handleExternalEvents">true</ix:property>
+        </ix:beanProperties>
+    </model:eventHandler>
+    <model:eventHandler guid="8A77CEF81FD7F3AAA4EFC659341D493CE0E93E98" class="de.uplanet.lucy.server.workflow.eventhandler.UserWorkflowEventHandler">
+        <model:title>
+            <model:item lang="de">JDBC Trace: OFF</model:item>
+            <model:item lang="en">Generic event handler</model:item>
+        </model:title>
+        <ix:beanProperties>
+            <ix:property name="active">true</ix:property>
+            <ix:property name="eventGuid">5790F09A95734A20B40C2F4DC772BD1B648FC133</ix:property>
+            <ix:property name="handleExternalEvents">true</ix:property>
+        </ix:beanProperties>
+    </model:eventHandler>
+    <model:eventHandler guid="C161A6EA1372F65B98FE6F4A4D24AAEA3BE0B4DA" class="de.uplanet.lucy.server.workflow.eventhandler.UserWorkflowEventHandler">
+        <model:title>
+            <model:item lang="de">Request Dump: ON</model:item>
+            <model:item lang="en">Generic event handler</model:item>
+        </model:title>
+        <ix:beanProperties>
+            <ix:property name="active">true</ix:property>
+            <ix:property name="eventGuid">BA28FE6A76797AF0CB4C34739834C21E617381E4</ix:property>
+            <ix:property name="handleExternalEvents">true</ix:property>
+        </ix:beanProperties>
+    </model:eventHandler>
+    <model:eventHandler guid="1BDD14347F1FCEE990F2C42F6CC00F272C62AD36" class="de.uplanet.lucy.server.workflow.eventhandler.UserWorkflowEventHandler">
+        <model:title>
+            <model:item lang="de">Request Dump: OFF</model:item>
+            <model:item lang="en">Generic event handler</model:item>
+        </model:title>
+        <ix:beanProperties>
+            <ix:property name="active">true</ix:property>
+            <ix:property name="eventGuid">DB3BF69F60A27558F83DBF49807CC1689C208D6A</ix:property>
+            <ix:property name="handleExternalEvents">true</ix:property>
+        </ix:beanProperties>
+    </model:eventHandler>
+    <model:eventHandler guid="6ED41CBFA93C4199F9D615DDC42E64D57036F748" class="de.uplanet.lucy.server.workflow.eventhandler.UserWorkflowEventHandler">
+        <model:title>
+            <model:item lang="de">Make Heap Dump</model:item>
+            <model:item lang="en">Generic event handler</model:item>
+        </model:title>
+        <ix:beanProperties>
+            <ix:property name="active">true</ix:property>
+            <ix:property name="eventGuid">1D7FB31F34B2A144A1524D60ECBC21FF9DAB5B3A</ix:property>
+            <ix:property name="handleExternalEvents">true</ix:property>
+        </ix:beanProperties>
+    </model:eventHandler>
+    <model:eventHandler guid="1BA38F90FCA84EBE4702428766CD474427FB547C" class="de.uplanet.lucy.server.workflow.eventhandler.UserWorkflowEventHandler">
+        <model:title>
+            <model:item lang="de">Log Thread Stacks</model:item>
+            <model:item lang="en">Generic event handler</model:item>
+        </model:title>
+        <ix:beanProperties>
+            <ix:property name="active">true</ix:property>
+            <ix:property name="eventGuid">CD37246895F9513F3EA591228BAF34814D235789</ix:property>
+            <ix:property name="handleExternalEvents">true</ix:property>
+        </ix:beanProperties>
+    </model:eventHandler>
+    <model:eventHandler guid="B10CAD5996158AB8592E004E467A75E153C8FE84" class="de.uplanet.lucy.server.workflow.eventhandler.UserWorkflowEventHandler">
+        <model:title>
+            <model:item lang="de">Run GC</model:item>
+            <model:item lang="en">Generic event handler</model:item>
+        </model:title>
+        <ix:beanProperties>
+            <ix:property name="active">true</ix:property>
+            <ix:property name="eventGuid">8B3ED649BF503A74694D81211A39784010B5901C</ix:property>
+            <ix:property name="handleExternalEvents">true</ix:property>
+        </ix:beanProperties>
+    </model:eventHandler>
+    <model:eventHandler guid="3F1B14A8B18B37E8892421E06AFAD52679A20520" class="de.uplanet.lucy.server.workflow.eventhandler.UserWorkflowEventHandler">
+        <model:title>
+            <model:item lang="de">Login Debug: ON</model:item>
+            <model:item lang="en">Generic event handler</model:item>
+        </model:title>
+        <ix:beanProperties>
+            <ix:property name="active">true</ix:property>
+            <ix:property name="eventGuid">C6A88B1F847A3C5A301B277D470512E6178ECC7F</ix:property>
+            <ix:property name="handleExternalEvents">true</ix:property>
+        </ix:beanProperties>
+    </model:eventHandler>
+    <model:eventHandler guid="5C4F14E1089298E04846B5695EE826BB42FE2ED8" class="de.uplanet.lucy.server.workflow.eventhandler.UserWorkflowEventHandler">
+        <model:title>
+            <model:item lang="de">Login Debug: OFF</model:item>
+            <model:item lang="en">Generic event handler</model:item>
+        </model:title>
+        <ix:beanProperties>
+            <ix:property name="active">true</ix:property>
+            <ix:property name="eventGuid">F4F77AD7748019411C138E9E91E7602861B5472F</ix:property>
+            <ix:property name="handleExternalEvents">true</ix:property>
+        </ix:beanProperties>
+    </model:eventHandler>
+    <model:eventHandler guid="43FE5AD5A7D7CCFCB40508C0B8D87B7E3FD3F515" class="de.uplanet.lucy.server.workflow.eventhandler.UserWorkflowEventHandler">
+        <model:title>
+            <model:item lang="de">ProcessingTime: ON</model:item>
+            <model:item lang="en">Generic event handler</model:item>
+        </model:title>
+        <ix:beanProperties>
+            <ix:property name="active">true</ix:property>
+            <ix:property name="eventGuid">38727BEC9FE4CB2ADE91051617A76B22E6863723</ix:property>
+            <ix:property name="handleExternalEvents">true</ix:property>
+        </ix:beanProperties>
+    </model:eventHandler>
+    <model:eventHandler guid="6BE73A615786DD2FBE16B4456D5E7B8E77A3E507" class="de.uplanet.lucy.server.workflow.eventhandler.UserWorkflowEventHandler">
+        <model:title>
+            <model:item lang="de">ProcessingTime: OFF</model:item>
+            <model:item lang="en">Generic event handler</model:item>
+        </model:title>
+        <ix:beanProperties>
+            <ix:property name="active">true</ix:property>
+            <ix:property name="eventGuid">C0445BA4031187F85C9CA4C9574AD2192B38B661</ix:property>
+            <ix:property name="handleExternalEvents">true</ix:property>
+        </ix:beanProperties>
+    </model:eventHandler>
+    <model:action guid="08568A1A68C4408086B356973B0AADAB15DF0023" class="de.uplanet.lucy.server.workflow.action.GroovyScriptWorkflowAction">
+        <model:title>
+            <model:item lang="de">JDBC Trace: ON</model:item>
+            <model:item lang="en">Groovy script action</model:item>
+        </model:title>
+        <ix:beanProperties>
+            <ix:property name="active">true</ix:property>
+            <ix:property name="cacheCompiledScript">true</ix:property>
+            <ix:property name="scriptPath">groovy/script08568A1A68C4408086B356973B0AADAB15DF0023.groovy</ix:property>
+        </ix:beanProperties>
+    </model:action>
+    <model:action guid="C402C2C061EDA6509679DAD55E21D38D1804E34A" class="de.uplanet.lucy.server.workflow.action.GroovyScriptWorkflowAction">
+        <model:title>
+            <model:item lang="de">JDBC Trace: OFF</model:item>
+            <model:item lang="en">Groovy script action</model:item>
+        </model:title>
+        <ix:beanProperties>
+            <ix:property name="active">true</ix:property>
+            <ix:property name="cacheCompiledScript">true</ix:property>
+            <ix:property name="scriptPath">groovy/scriptC402C2C061EDA6509679DAD55E21D38D1804E34A.groovy</ix:property>
+        </ix:beanProperties>
+    </model:action>
+    <model:action guid="E9FFAEDE08679FDBC0E54A21A94F8BCA664C9848" class="de.uplanet.lucy.server.workflow.action.GroovyScriptWorkflowAction">
+        <model:title>
+            <model:item lang="de">Request Dump: ON</model:item>
+            <model:item lang="en">Groovy script action</model:item>
+        </model:title>
+        <ix:beanProperties>
+            <ix:property name="active">true</ix:property>
+            <ix:property name="cacheCompiledScript">true</ix:property>
+            <ix:property name="scriptPath">groovy/scriptE9FFAEDE08679FDBC0E54A21A94F8BCA664C9848.groovy</ix:property>
+        </ix:beanProperties>
+    </model:action>
+    <model:action guid="AD749554E656EFD1E997E5D0466D5F648C7CC1F9" class="de.uplanet.lucy.server.workflow.action.GroovyScriptWorkflowAction">
+        <model:title>
+            <model:item lang="de">Request Dump: OFF</model:item>
+            <model:item lang="en">Groovy script action</model:item>
+        </model:title>
+        <ix:beanProperties>
+            <ix:property name="active">true</ix:property>
+            <ix:property name="cacheCompiledScript">true</ix:property>
+            <ix:property name="scriptPath">groovy/scriptAD749554E656EFD1E997E5D0466D5F648C7CC1F9.groovy</ix:property>
+        </ix:beanProperties>
+    </model:action>
+    <model:action guid="F8946EBFA1F8AF3F425660235F905ACED0A2BE98" class="de.uplanet.lucy.server.workflow.action.GroovyScriptWorkflowAction">
+        <model:title>
+            <model:item lang="de">Make Heap Dump</model:item>
+            <model:item lang="en">Groovy script action</model:item>
+        </model:title>
+        <ix:beanProperties>
+            <ix:property name="active">true</ix:property>
+            <ix:property name="cacheCompiledScript">true</ix:property>
+            <ix:property name="scriptPath">groovy/scriptF8946EBFA1F8AF3F425660235F905ACED0A2BE98.groovy</ix:property>
+        </ix:beanProperties>
+    </model:action>
+    <model:action guid="DEA49C0294B2CF62619037304B345E11754A81C3" class="de.uplanet.lucy.server.workflow.action.GroovyScriptWorkflowAction">
+        <model:title>
+            <model:item lang="de">Log Thread Stacks</model:item>
+            <model:item lang="en">Groovy script action</model:item>
+        </model:title>
+        <ix:beanProperties>
+            <ix:property name="active">true</ix:property>
+            <ix:property name="cacheCompiledScript">true</ix:property>
+            <ix:property name="scriptPath">groovy/scriptDEA49C0294B2CF62619037304B345E11754A81C3.groovy</ix:property>
+        </ix:beanProperties>
+    </model:action>
+    <model:action guid="B6BC32CD5553A20334CBF0FE0597D501F8B0A3D8" class="de.uplanet.lucy.server.workflow.action.GroovyScriptWorkflowAction">
+        <model:title>
+            <model:item lang="de">Run GC</model:item>
+            <model:item lang="en">Groovy script action</model:item>
+        </model:title>
+        <ix:beanProperties>
+            <ix:property name="active">true</ix:property>
+            <ix:property name="cacheCompiledScript">true</ix:property>
+            <ix:property name="scriptPath">groovy/scriptB6BC32CD5553A20334CBF0FE0597D501F8B0A3D8.groovy</ix:property>
+        </ix:beanProperties>
+    </model:action>
+    <model:action guid="5F93EF782B248851FEC6D55CAD005C0BF59B6234" class="de.uplanet.lucy.server.workflow.action.GroovyScriptWorkflowAction">
+        <model:title>
+            <model:item lang="de">Login Debug: ON</model:item>
+            <model:item lang="en">Groovy script action</model:item>
+        </model:title>
+        <ix:beanProperties>
+            <ix:property name="active">true</ix:property>
+            <ix:property name="cacheCompiledScript">true</ix:property>
+            <ix:property name="scriptPath">groovy/script5F93EF782B248851FEC6D55CAD005C0BF59B6234.groovy</ix:property>
+        </ix:beanProperties>
+    </model:action>
+    <model:action guid="FCF2A2864C441F86C78A4463231D81F4353B3063" class="de.uplanet.lucy.server.workflow.action.GroovyScriptWorkflowAction">
+        <model:title>
+            <model:item lang="de">Login Debug: OFF</model:item>
+            <model:item lang="en">Groovy script action</model:item>
+        </model:title>
+        <ix:beanProperties>
+            <ix:property name="active">true</ix:property>
+            <ix:property name="cacheCompiledScript">true</ix:property>
+            <ix:property name="scriptPath">groovy/scriptFCF2A2864C441F86C78A4463231D81F4353B3063.groovy</ix:property>
+        </ix:beanProperties>
+    </model:action>
+    <model:action guid="96DBB37ADC8B52ADF9F3E8D714CD80AA2856FF37" class="de.uplanet.lucy.server.workflow.action.GroovyScriptWorkflowAction">
+        <model:title>
+            <model:item lang="de">LogRequestStartEnd: ON</model:item>
+            <model:item lang="en">Groovy script action</model:item>
+        </model:title>
+        <ix:beanProperties>
+            <ix:property name="active">true</ix:property>
+            <ix:property name="cacheCompiledScript">true</ix:property>
+            <ix:property name="scriptPath">groovy/script96DBB37ADC8B52ADF9F3E8D714CD80AA2856FF37.groovy</ix:property>
+        </ix:beanProperties>
+    </model:action>
+    <model:action guid="E4A3570041BA685E0187B790BA62D899AD776070" class="de.uplanet.lucy.server.workflow.action.GroovyScriptWorkflowAction">
+        <model:title>
+            <model:item lang="de">LogRequestProcessingTime: ON</model:item>
+            <model:item lang="en">Groovy script action</model:item>
+        </model:title>
+        <ix:beanProperties>
+            <ix:property name="active">true</ix:property>
+            <ix:property name="cacheCompiledScript">true</ix:property>
+            <ix:property name="scriptPath">groovy/scriptE4A3570041BA685E0187B790BA62D899AD776070.groovy</ix:property>
+        </ix:beanProperties>
+    </model:action>
+    <model:action guid="A2253F3CFC12BDF1C2CB62DA38222381F7B981FB" class="de.uplanet.lucy.server.workflow.action.GroovyScriptWorkflowAction">
+        <model:title>
+            <model:item lang="de">LogRequestStartEnd: OFF</model:item>
+            <model:item lang="en">Groovy script action</model:item>
+        </model:title>
+        <ix:beanProperties>
+            <ix:property name="active">true</ix:property>
+            <ix:property name="cacheCompiledScript">true</ix:property>
+            <ix:property name="scriptPath">groovy/scriptA2253F3CFC12BDF1C2CB62DA38222381F7B981FB.groovy</ix:property>
+        </ix:beanProperties>
+    </model:action>
+    <model:action guid="F1813EB4110044FE411756B4A34181B9D08B92C7" class="de.uplanet.lucy.server.workflow.action.GroovyScriptWorkflowAction">
+        <model:title>
+            <model:item lang="de">LogRequestProcessingTime: OFF</model:item>
+            <model:item lang="en">Groovy script action</model:item>
+        </model:title>
+        <ix:beanProperties>
+            <ix:property name="active">true</ix:property>
+            <ix:property name="cacheCompiledScript">true</ix:property>
+            <ix:property name="scriptPath">groovy/scriptF1813EB4110044FE411756B4A34181B9D08B92C7.groovy</ix:property>
+        </ix:beanProperties>
+    </model:action>
+    <model:transition guid="23942ED43FA9CE8ABC61AD2B389F32E7DFFFEC92" from="B1EDE8BA09E38F5736F2DD20FB97763A5B32B121" to="08568A1A68C4408086B356973B0AADAB15DF0023"/>
+    <model:transition guid="99645BA014045816658AF3DC5082AA910EFB0912" from="8A77CEF81FD7F3AAA4EFC659341D493CE0E93E98" to="C402C2C061EDA6509679DAD55E21D38D1804E34A"/>
+    <model:transition guid="7771DF7A80B08D874B311E6E912703ED81B73113" from="C161A6EA1372F65B98FE6F4A4D24AAEA3BE0B4DA" to="E9FFAEDE08679FDBC0E54A21A94F8BCA664C9848"/>
+    <model:transition guid="82BF19A86D0C5DE72D08CA713A5ED82AC833E853" from="1BDD14347F1FCEE990F2C42F6CC00F272C62AD36" to="AD749554E656EFD1E997E5D0466D5F648C7CC1F9"/>
+    <model:transition guid="6416EAD0F0194D384490D885E1A34E9C0485021B" from="6ED41CBFA93C4199F9D615DDC42E64D57036F748" to="F8946EBFA1F8AF3F425660235F905ACED0A2BE98"/>
+    <model:transition guid="95A00AF4263D399D2DD9439CF99090FECFAE8BC8" from="1BA38F90FCA84EBE4702428766CD474427FB547C" to="DEA49C0294B2CF62619037304B345E11754A81C3"/>
+    <model:transition guid="D64D4903CBB28A7541FC1ECFB995FE26DA24786F" from="B10CAD5996158AB8592E004E467A75E153C8FE84" to="B6BC32CD5553A20334CBF0FE0597D501F8B0A3D8"/>
+    <model:transition guid="DC127F3BFF371C3DCC1FBDDC37E87F0569EAE023" from="3F1B14A8B18B37E8892421E06AFAD52679A20520" to="5F93EF782B248851FEC6D55CAD005C0BF59B6234"/>
+    <model:transition guid="CCF85048697278F345C9E9BCFB8095520083D367" from="5C4F14E1089298E04846B5695EE826BB42FE2ED8" to="FCF2A2864C441F86C78A4463231D81F4353B3063"/>
+    <model:transition guid="EB8C8B364A2FECF3FADF5B65D12DFCFD81984B79" from="43FE5AD5A7D7CCFCB40508C0B8D87B7E3FD3F515" to="E4A3570041BA685E0187B790BA62D899AD776070"/>
+    <model:transition guid="3B011CD342C433228ED46E9CF6024649375B8269" from="C402C2C061EDA6509679DAD55E21D38D1804E34A" to="A2253F3CFC12BDF1C2CB62DA38222381F7B981FB"/>
+    <model:transition guid="397A127B864851D5BA9592AADB723E0C2B666F3F" from="6BE73A615786DD2FBE16B4456D5E7B8E77A3E507" to="F1813EB4110044FE411756B4A34181B9D08B92C7"/>
+    <model:transition guid="82A97A2EED2D359D14A304C0718AB94C19084D88" from="08568A1A68C4408086B356973B0AADAB15DF0023" to="96DBB37ADC8B52ADF9F3E8D714CD80AA2856FF37"/>
+</model:model>
