@@ -1,8 +1,5 @@
-g_syslog.info("\n--START------------------------------------------RequestDump-UPSUPPORT-JMXPROZESS-----------------------------------------START--\n")
+g_syslog.info("\n--START------------------------------------------RequestDump Intrexx Support Prozess-----------------------------------------START--\n")
 
 de.uplanet.lucy.server.security.IxAccessController.checkPermission(new java.security.AllPermission())
 
-def mbean = g_springApplicationContext.getBean("loggingMx")
-assert mbean
-
-mbean.enableDumpRequest()
+de.uplanet.lucy.server.support.scripting.groovy.GroovySupportHelper.getLogging().enableDumpRequest()

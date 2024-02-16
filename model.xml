@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model:model xmlns:model="http://schemas.unitedplanet.de/intrexx/2014/workflow/model/" xmlns:ix="http://schemas.unitedplanet.de/intrexx/2009/schema/basicType/" guid="B1D2A242018E41A9A342EB635F55A180321ED0C4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.unitedplanet.de/intrexx/2014/workflow/model/ http://schemas.unitedplanet.de/intrexx/2014/package/de/uplanet/lucy/workflow/res/wfmodel.xsd http://schemas.unitedplanet.de/intrexx/2009/schema/basicType/ http://schemas.unitedplanet.de/intrexx/2009/package/de/uplanet/lucy/xml/schema/res/intrexxBasicTypes.xsd">
     <model:title>
-        <model:item lang="de">JMX-UP-Support-Prozess-IX-1903</model:item>
+        <model:item lang="de">JMX-Intrexx-Support-Prozess</model:item>
         <model:item lang="en">JMX UP Support Process IX-1903</model:item>
     </model:title>
     <model:configuration>
@@ -115,7 +115,7 @@
             <model:item lang="en">Generic event handler</model:item>
         </model:title>
         <ix:beanProperties>
-            <ix:property name="active">true</ix:property>
+            <ix:property name="active">false</ix:property>
             <ix:property name="eventGuid">38727BEC9FE4CB2ADE91051617A76B22E6863723</ix:property>
             <ix:property name="handleExternalEvents">true</ix:property>
         </ix:beanProperties>
@@ -126,7 +126,7 @@
             <model:item lang="en">Generic event handler</model:item>
         </model:title>
         <ix:beanProperties>
-            <ix:property name="active">true</ix:property>
+            <ix:property name="active">false</ix:property>
             <ix:property name="eventGuid">C0445BA4031187F85C9CA4C9574AD2192B38B661</ix:property>
             <ix:property name="handleExternalEvents">true</ix:property>
         </ix:beanProperties>
@@ -236,7 +236,7 @@
             <model:item lang="en">Groovy script action</model:item>
         </model:title>
         <ix:beanProperties>
-            <ix:property name="active">true</ix:property>
+            <ix:property name="active">false</ix:property>
             <ix:property name="cacheCompiledScript">true</ix:property>
             <ix:property name="scriptPath">groovy/script96DBB37ADC8B52ADF9F3E8D714CD80AA2856FF37.groovy</ix:property>
         </ix:beanProperties>
@@ -247,7 +247,7 @@
             <model:item lang="en">Groovy script action</model:item>
         </model:title>
         <ix:beanProperties>
-            <ix:property name="active">true</ix:property>
+            <ix:property name="active">false</ix:property>
             <ix:property name="cacheCompiledScript">true</ix:property>
             <ix:property name="scriptPath">groovy/scriptE4A3570041BA685E0187B790BA62D899AD776070.groovy</ix:property>
         </ix:beanProperties>
@@ -258,7 +258,7 @@
             <model:item lang="en">Groovy script action</model:item>
         </model:title>
         <ix:beanProperties>
-            <ix:property name="active">true</ix:property>
+            <ix:property name="active">false</ix:property>
             <ix:property name="cacheCompiledScript">true</ix:property>
             <ix:property name="scriptPath">groovy/scriptA2253F3CFC12BDF1C2CB62DA38222381F7B981FB.groovy</ix:property>
         </ix:beanProperties>
@@ -269,7 +269,7 @@
             <model:item lang="en">Groovy script action</model:item>
         </model:title>
         <ix:beanProperties>
-            <ix:property name="active">true</ix:property>
+            <ix:property name="active">false</ix:property>
             <ix:property name="cacheCompiledScript">true</ix:property>
             <ix:property name="scriptPath">groovy/scriptF1813EB4110044FE411756B4A34181B9D08B92C7.groovy</ix:property>
         </ix:beanProperties>

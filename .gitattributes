@@ -1,0 +1,8 @@
+* text=auto
+.gitignore eol=lf
+.gitattributes eol=lf
+version eol=lf
+
+*.groovy text eol=lf
+*.xml text eol=lf
+
